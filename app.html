@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List App</title>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        font-family:Arial, Helvetica, sans-serif;
+      }
+      .container {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 20px;
+        width: 500px;
+        margin-top: 20vh;
+        border-radius: 20px;
+      }
+      .content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+      }
+
+      .content {
+        display: flex;
+        justify-content: center;
+      }
+      input {
+        padding: 20px;
+        color: black;
+        font-size: 1.2rem;
+        outline: none;
+      }
+      button {
+        font-size: 1.2rem;
+        background-color: #6528F7;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #6630e3;
+      }
+
+      #content-view {
+        width: 330px;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      .content-view-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 20px;
+        border: 2px solid black;
+        margin-bottom: 10px;
+      }
+
+      h4 {
+        font-size: 1.2rem;
+      }
+
+      #search {
+        margin-top: 20px;
+        width: 352px;
+        padding: 10px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo App</h1>
+      <div class="content-container">
+        <div class="content">
+          <input
+            type="text"
+            id="input"
+            placeholder="Tambah kegiatanmu disini..."
+          />
+          <button onclick="handleTambahData()">Tambah</button>
+        </div>
+
+        <div class="content-search">
+          <input type="text" id="search" placeholder="Cari kegiatanmu..." />
+        </div>
+        
+        <div id="content-view">
+          <!-- <div class="content-view-container">
+            <div>
+              <h4>Kepasar</h4>
+            </div>
+            <div>
+              <button>Edit</button>
+              <button>Hapus</button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
